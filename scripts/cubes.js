@@ -127,7 +127,9 @@ function animate() {
         objects[i].scale.z = 1+wave;
     }
     var r = Date.now() * 0.0005;
-    camera.position.x = 700 * Math.cos( r );
+    console.log(r);
+    camera.position.x = 700 * Math.sin( r );
+    camera.position.y = 700 * Math.cos( -r );
 
 }
 
